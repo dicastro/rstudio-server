@@ -35,6 +35,9 @@ RUN R -e "install.packages(\"ggthemes\")" && \
 RUN R -e "install.packages(\"wesanderson\")" && \
     rm -Rf /tmp/**/downloaded_packages
 
+RUN R -e "install.packages(\"psych\")" && \
+    rm -Rf /tmp/**/downloaded_packages
+
 ENV LANG es_ES.UTF-8
 ENV LANGUAGE es_ES.UTF-8
 ENV LC_ALL es_ES.UTF-8
